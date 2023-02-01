@@ -1,0 +1,629 @@
+/* External Styling used for Coin Project */
+
+/*body margin trim and padding default to 0 all jsp */
+html,body {
+    margin:0;
+    padding:0;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+/*footer for most jsps */
+.footer {
+  background-color: #5D5C61;
+  font-family: Arial, sans-serif, "Times New Roman";
+  color: #FAFAFA;
+  bottom:0;
+  left:0;
+  padding: 10px;
+  margin-bottom: 0;
+  overflow: hidden;
+  text-align: left;
+  width: 100%;
+  font-size: 20px;
+}
+
+.footer2 {
+  background-color: #5D5C61;
+  font-family: Arial, sans-serif, "Times New Roman";
+  color: #FAFAFA;
+  bottom:0;
+  left:0;
+  padding: 10px;
+  margin-bottom: 0;
+  overflow: hidden;
+  text-align: left;
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 0px;
+  position: fixed;
+  padding-top: 30px;
+}
+/* Nav Styling for all JSP that use a Nav */
+nav {
+    overflow: hidden;
+    background-color: white;
+    border-style: none;
+    width:100%;
+}
+/* style the top navigation bar */
+
+nav a {
+    float: left;
+    color: black;
+    font-size: 16px;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-family: Roboto, Arial, sans-serif;
+    line-height: 22px;
+}
+
+#logout {
+    float:right;
+}
+header {
+    background-color: white;
+    border-style: none;
+}
+
+/* Scroller Animation for home page text and arrow */
+.scrolled {
+  background-color: #1c1c1c;
+  color: white !important;
+  transition: 0.2s;
+}
+
+.scrolled-link {
+  color: white !important;
+  transition: 0.2s;
+
+}
+
+#scroll-down {
+  
+  color: grey;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#scroll-down h1 {
+  
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+#scroller {
+  animation-name: bouncer;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+  animation-duration: 1s;
+}
+
+#scroller:hover {
+  transform: scale(1.1)
+}
+
+@keyframes bouncer {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-15px)
+  }
+}
+
+#homeMainText {
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-name: show-text;
+  transform-origin: center;
+  text-align: center;
+  font-size: 80px;
+  color: #5D5C61;
+  text-shadow: 1px 0 0 white, 0 -1px 0 white, 0 1px 0 white, -1px 0 0 white;
+}
+
+@keyframes show-text {
+  0% {
+    transform: scale(0);
+    opacity: 0%;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 100%;
+  }
+}
+
+#homeSubText {
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-name: slide-in;
+  transform-origin: center;
+  text-align: center;
+  font-size: 38px;
+  color: #5D5C61;
+  text-shadow: 1px 0 0 white, 0 -1px 0 white, 0 1px 0 white, -1px 0 0 white;
+  
+  
+}
+#home {
+    box-shadow: 5px 10px 5px 10px;
+    background-color:  #7395AE;
+    margin: 0;
+    width:100%;
+}
+@keyframes slide-in {
+  0% {
+    opacity: 0%;
+    transform: translateX(-200px);
+    
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateX(0px);
+  }
+}
+
+/* will need to change directory for homepage img probably */
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  width: 100%;
+  background: url('../Coin Project/images/coins.jpeg');
+  opacity: 0.8;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  
+}
+/* end of scroller animation css */
+
+/* start of second container on home page */
+#aboutUs {
+  background-color: #7395AE;
+  text-align: center;
+  padding: 200px;
+  font-family: Arial;
+  padding-top: 25px;
+ 
+
+}
+
+#about {
+   font-size: 34px;
+   padding:10px;
+   color: white;
+   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+#about2 {
+   font-size: 34px;
+   padding:10px;
+   color: white;
+   font-weight: bold;
+   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+#homeButton {
+    color: black;
+    background-color: white;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding:10px;
+    margin-bottom: -100px;
+
+}
+/* End of Home Page Styling */
+
+/*Search Coins Page Styling */
+
+#searchBody {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background-color: lightslategrey;
+}
+
+#line {
+    height: 5px;
+    border:none;
+    background-color: white;
+}
+
+#searchHead {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+    padding-bottom: 90px;
+    font-family: "Metal Mania";
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    font-size: 42px;
+}
+
+.about-band-image {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.main-footer {
+    background-color: #494E6B;
+    color: white;
+    padding: .25em 0;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #494E6B;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #985E6D;
+    font-size: 4em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #494E6B;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #985E6D;
+}
+
+.tour-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.tour-row:last-child {
+    border: none;
+}
+
+.tour-item {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.tour-date {
+    color: #555;
+    width: 11%;
+    font-weight: bold;
+}
+
+.tour-city {
+    width: 24%;
+}
+
+.tour-arena {
+    width: 42%;
+}
+
+.tour-btn {
+    max-width: 19%;
+}
+
+.shop-item {
+    margin: 30px;
+    border:white;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    
+}
+
+.shop-item-image {
+    height: 250px;
+    padding: 5px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: white;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: white;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: white;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: white;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #985E6D;
+    background-color: #eee;
+    color: black;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid white;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: white;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+/* End of Search Styling */
+
+/* Customer and Processor Login Styling for text/area and buttons */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 26px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+            
+input[type=submit] {
+    padding: 6px 8px;
+    border-radius: 2px;
+    margin-right: 14px;
+    margin-left: 60px;
+    margin-top: 16px;
+}
+            
+input[type=reset] {
+    padding: 6px 8px;
+    border-radius: 2px;
+}
+   
+/* Customer and Processor Login form styling */
+#login {
+    width: 250px;
+    height: 250px;
+    padding: 30px;
+    background-color: #EEE;
+    color: #333;
+    border: 5px solid black;
+    border-radius: 20px 20px 20px 20px;
+    display: inline-block;
+    padding-bottom: 30px;
+}
+
+#procedureLogin {
+    width: 250px;
+    height: 250px;
+    padding: 30px;
+    background-color: #EEE;
+    color: #333;
+    border: 5px solid black;
+    border-radius: 20px 20px 20px 20px;
+    display: inline-block;
+    padding-bottom: 30px;
+}
+
+/* End of Processor & Customer Form styling */
+
+/* Customer Login/Error Page Styling */
+#loginBody {
+    background-color: #7395AE;
+    margin:0;
+    position: relative;
+}
+
+#loginHeader {
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-size: 42px;
+}
+
+#loginText {
+    text-align: center;
+    margin-bottom: 200px;
+    color:white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+/* End of Customer Login Styling */
+
+/* Processor Login/Error Page Styling */
+
+#procLogin {
+    background-color:  #7395AE;
+}
+
+#procHeader {
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-size: 42px;
+}
+
+/* End of Processor Login Styling */
+
+
+#createForm {
+    width: 700px;
+    height: 1200px;
+    padding: 30px;
+    background-color: #EEE;
+    color: #333;
+    border: 5px solid black;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 375px;
+    padding-bottom: 50px;
+}
+
+h1 {
+    padding-top: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2 {
+    padding-top: 30px;
+    font-size: 24px;
+    text-align: center;
+}
